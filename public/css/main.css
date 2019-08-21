@@ -1,0 +1,105 @@
+*{
+   margin: 0;
+   border: 0;
+   padding: 0;
+   outline: 0;
+   cursor: default;
+   box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
+}
+main{
+   margin: 0 auto;
+   width: 50%;
+   max-width: 600px;
+   padding: 0 6.5px;
+}
+main>header{
+   padding: 2.6rem 0 0;
+   text-transform: capitalize;
+}
+main>header .warning{
+   color: orangered;
+   text-transform: uppercase;
+}
+main>header label{
+   font-size: 1.3rem;
+   font-weight: 600;
+   color: rgb(20, 116, 194);
+}
+main>header #name,main>header #pbody{
+   display: block;
+   width: 100%;
+   margin: 5.2px 0 1rem;
+   padding: 0 1rem;
+   border: 1px solid steelblue;
+}
+main>header #name{
+   height: 1.8rem;
+}
+main>header #pbody{
+   height: 6.5rem;
+   resize: none;
+}
+main>header>button{
+   display: block;
+   width: 100%;
+   margin-top: 2.6rem;
+   padding: 4.2px 0;
+   text-transform: capitalize;
+   background-color: steelblue;
+   color: white;
+   font-size: 1.3rem;
+   font-weight: 800;
+   letter-spacing: 0.13em;
+   transition: background-color 490ms ease-in-out;
+}
+main>header>button:hover{
+   background-color: rgb(7, 138, 245);
+}
+main>header>button:active{
+   box-shadow: inset 1px 1px 1px lightcyan,inset -1px -1px 1px lightcyan,
+   inset -1px 1px 1px lightcyan,inset 1px -1px 1px lightcyan;
+}
+#content{
+   margin-top: 1.3rem;
+}
+#content .post{
+   display: block;
+   width: 100%;
+   word-wrap: break-word;
+   text-transform: capitalize;
+   padding: 18px 0 8px;
+   border-bottom: 1.3px solid rgb(20, 116, 194);
+}
+#content .post>.ptitle{
+   padding: 4.9px 1rem;
+}
+#content .post>.ptitle>.uname,#content .post>.ptitle>.red{
+   display: inline-block;
+}
+#content .post>.ptitle>.uname{
+   width: 60%;
+   color: rgb(20, 116, 194);
+   font-size: 1.12rem;
+   font-weight: 600;
+   letter-spacing: 0.13rem;
+}
+#content .post>.ptitle>.red{
+   width: 20%;
+   color: orangered;
+   text-align: right;
+   font-size: 0.85rem;
+   font-weight: 300;
+   text-decoration: underline;
+}
+#content .post>.ptitle>.red>span{
+   cursor: pointer;
+}
+#content .post>.pbody{
+   padding: 4.2px 4.2px 0 3rem;
+}
+@media(max-width: 480px){
+   main{
+      width: 100%;
+   }
+}
